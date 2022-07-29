@@ -1,0 +1,15 @@
+//1. Write a program to input a string and find its length without using strlen() function?
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    cout<<"Enter";
+    string inp;
+    getline(cin,inp);
+    int i,cnt=0;
+    for(i=0;inp[i]!='\0';++i){
+        ++cnt;
+    }
+    cout<<cnt;
+    return 0;
+}
