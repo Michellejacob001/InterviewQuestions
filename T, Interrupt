@@ -1,0 +1,47 @@
+https://www.tutorialspoint.com/what-are-different-types-of-interrupts
+
+
+An interrupt is a signal from a device attached to a computer or from a program within the computer that requires the operating system to stop and figure out what to do next.
+
+Interrupt systems are nothing but while the CPU can process the programs if the CPU needs any IO operation. Then, it is sent to the queue and it does the CPU process. Later on Input/output (I/O) operation is ready.
+
+The I/O devices interrupt the data which is available and does the remaining process; like that interrupts are useful. If interrupts are not present, the CPU needs to be in idle state for some time, until the IO operation needs to complete. So, to avoid the CPU waiting time interrupts are coming into picture.
+
+Processor handle interrupts
+Whenever an interrupt occurs, it causes the CPU to stop executing the current program. Then, comes the control to interrupt handler or interrupt service routine.
+
+These are the steps in which ISR handles interrupts. These are as follows −
+
+Step 1 − When an interrupt occurs let assume processor is executing i'th instruction and program counter will point to the next instruction (i+1)th.
+
+Step 2 − When an interrupt occurs the program value is stored on the process stack and the program counter is loaded with the address of interrupt service routine.
+
+Step 3 − Once the interrupt service routine is completed the address on the process stack is popped and placed back in the program counter.
+
+Step 4 − Now it executes the resume for (i+1)th line.
+
+Types of interrupts
+There are two types of interrupts which are as follows −
+
+Hardware interrupts
+The interrupt signal generated from external devices and i/o devices are made interrupt to CPU when the instructions are ready.
+
+For example − In a keyboard if we press a key to do some action this pressing of the keyboard generates a signal that is given to the processor to do action, such interrupts are called hardware interrupts.
+
+Hardware interrupts are classified into two types which are as follows −
+
+Maskable Interrupt − The hardware interrupts that can be delayed when a highest priority interrupt has occurred to the processor.
+
+Non Maskable Interrupt − The hardware that cannot be delayed and immediately be serviced by the processor.
+
+Software interrupts
+The interrupt signal generated from internal devices and software programs need to access any system call then software interrupts are present.
+
+Software interrupt is divided into two types. They are as follows −
+
+Normal Interrupts − The interrupts that are caused by the software instructions are called software instructions.
+
+Exception − Exception is nothing but an unplanned interruption while executing a program. For example − while executing a program if we got a value that is divided by zero is called an exception.
+
+What are software interrupts examples?
+Similar in functionality to a subroutine call, a software interrupt is used for different purposes in a device. One notable example is when communicating with the disk controller for reading and writing data to and from a disk.
