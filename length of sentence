@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+     char a[50];
+     string b;
+     int c=0;
+
+    getline(cin,b);
+for(int i=0;b[i]!='\0';++i){
+    ++c;
+}
+cout<<c;
+
+
+    return 0;
+}
