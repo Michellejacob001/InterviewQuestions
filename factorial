@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int fact(int n){
+    int i,j,m=1,s=0;
+    for(i=1;i<=n;++i){
+        
+           m=m*i; 
+        
+    }
+    return m;
+}
+
+int main()
+{
+int n,arr[100],x,i,j;
+cin>>n;
+//cout<<n;
+
+x=fact(n);
+cout<<x;
+
+// for(i=0;i<n;++i){
+//     cout<<arr[i];
+// }
+    return 0;
+}
