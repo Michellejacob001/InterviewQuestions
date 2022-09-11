@@ -1,0 +1,19 @@
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+     string b;
+     int c=0;
+
+    getline(cin,b);
+for(int i=b.size()-1;b[i]>=0;--i){
+    cout<<b[i];
+}
+
+
+
+    return 0;
+}
