@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int arr[100],x,a=0,i,j;
+string n;
+getline(cin,n);
+//cout<<n;
+
+
+for(i=0;i<n.size();++i){ //'/0' did'nt work
+   if(n[i]=='1')
+++a;
+}
+
+cout<<a;
+    return 0;
+}
